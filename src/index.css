@@ -1,3 +1,7 @@
+:root{
+  --editor-heigth: 100px;
+  --preview-heigth: calc(99vh - var(--editor-heigth) )
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,24 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  background-color: #282a36;
+  color: #f8f8f2;
+}
+#root{
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#editor{
+  width: 100%;
+  height: 100px;
+}
+#preview{
+  height: var(--preview-heigth);
+  overflow-y: scroll;
+  border: 1px solid #f8f8f2;
 }
